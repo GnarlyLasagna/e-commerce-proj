@@ -1,0 +1,41 @@
+/* components/Header.module.css */
+.header {
+  background-color: #333;
+  padding: 1rem;
+  width: 100%;
+  z-index: 1000; /* Ensures it is above other content */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin: 0 1rem;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+/* Fixed Header */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
