@@ -1,41 +1,58 @@
+
+
 /* components/Header.module.css */
 .header {
-  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 1000; /* Ensures it is above other content */
+  z-index: 1000;
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .navList {
-  list-style: none;
   display: flex;
-  margin: 0;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .navItem {
-  margin: 0 1rem;
+  margin-right: 1rem;
 }
 
 .navLink {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .navLink:hover {
-  text-decoration: underline;
+  color: #ccc;
 }
 
-/* Fixed Header */
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.cartIcon {
+  margin-left: auto;
+}
+
+.cartIcon a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cartIcon a:hover {
+  color: #ccc;
 }
 
